@@ -2,8 +2,14 @@
 
 Library for easily integration analytics into your project.
 
-# Installation
+![Graph of abstraction](Resources/AnalyticsLayer.png)
 
-`pod 'swift-analytics', '0.0.1'`
+## Installation
 
-![Graph of abstraction](https://github.com/alexfilimon/swift-analytics/blob/master/img/AnalyticsLayer.png)
+`pod 'swift-analytics'`
+
+## How to release new version
+
+1. Bump version (in podspec file)
+2. Create tag with name of version (`git tag {new_version}`) and push it to origin (`git push origin {new_version}`)
+3. `pod trunk push`

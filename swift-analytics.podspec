@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "swift-analytics"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Reusable library for analytics written with swift"
   spec.description  = <<-DESC
   This is the library for using analytics in your project
