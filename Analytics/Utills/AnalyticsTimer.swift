@@ -8,20 +8,30 @@
 
 import Foundation
 
-class AnalyticsTimer {
+/// Class for working with time
+public class AnalyticsTimer {
 
-    // MARK: - Properties
+    // MARK: - Constants
 
-    var date = NSDate()
+    private enum Constants {
+        static let roundDidgits = 1
+    }
+
+    // MARK: - Private properties
+
+    private var date = NSDate()
 
     // MARK: - Public methods
 
+    /// Method for clearing time
     public func invalidate() {
         date = NSDate()
     }
 
+    /// Method for getting current time
     public func getTimeIntervalSinceLastStart() -> TimeInterval {
-        return abs(date.timeIntervalSinceNow)
+        let multiplier = pow(10, Double(Constants.roundDidgits))
+        return Darwin.round(abs(date.timeIntervalSinceNow) * multiplier) / multiplier
     }
 
 }

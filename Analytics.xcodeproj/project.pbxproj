@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C131745A2254F97D00761163 /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C13174502254F97D00761163 /* Analytics.framework */; };
-		C131745F2254F97D00761163 /* AnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131745E2254F97D00761163 /* AnalyticsTests.swift */; };
 		C13174612254F97D00761163 /* Analytics.h in Headers */ = {isa = PBXBuildFile; fileRef = C13174532254F97D00761163 /* Analytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C131746B2254F9A100761163 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131746A2254F9A100761163 /* AnalyticsManager.swift */; };
 		C131746D2254F9E400761163 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131746C2254F9E400761163 /* AnalyticsEvent.swift */; };
 		C131746F2254FA2900761163 /* AnalyticsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131746E2254FA2900761163 /* AnalyticsProvider.swift */; };
 		C14C4D012255D4D70002AFEA /* AnalyticsTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C4D002255D4D70002AFEA /* AnalyticsTimer.swift */; };
+		C1A37485249E5CB6001A86EF /* AnalyticsEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A37484249E5CB6001A86EF /* AnalyticsEventTests.swift */; };
+		C1B4ECE9249CED3F00C0D0F8 /* BaseAnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4ECE8249CED3F00C0D0F8 /* BaseAnalyticsEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +32,13 @@
 		C13174532254F97D00761163 /* Analytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
 		C13174542254F97D00761163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C13174592254F97D00761163 /* AnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C131745E2254F97D00761163 /* AnalyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTests.swift; sourceTree = "<group>"; };
 		C13174602254F97D00761163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C131746A2254F9A100761163 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		C131746C2254F9E400761163 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 		C131746E2254FA2900761163 /* AnalyticsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProvider.swift; sourceTree = "<group>"; };
 		C14C4D002255D4D70002AFEA /* AnalyticsTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTimer.swift; sourceTree = "<group>"; };
+		C1A37484249E5CB6001A86EF /* AnalyticsEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTests.swift; sourceTree = "<group>"; };
+		C1B4ECE8249CED3F00C0D0F8 /* BaseAnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnalyticsEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				C131746A2254F9A100761163 /* AnalyticsManager.swift */,
 				C131746C2254F9E400761163 /* AnalyticsEvent.swift */,
 				C131746E2254FA2900761163 /* AnalyticsProvider.swift */,
+				C1B4ECE8249CED3F00C0D0F8 /* BaseAnalyticsEvent.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -92,8 +95,8 @@
 		C131745D2254F97D00761163 /* AnalyticsTests */ = {
 			isa = PBXGroup;
 			children = (
-				C131745E2254F97D00761163 /* AnalyticsTests.swift */,
 				C13174602254F97D00761163 /* Info.plist */,
+				C1A37484249E5CB6001A86EF /* AnalyticsEventTests.swift */,
 			);
 			path = AnalyticsTests;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				C131746B2254F9A100761163 /* AnalyticsManager.swift in Sources */,
 				C131746F2254FA2900761163 /* AnalyticsProvider.swift in Sources */,
 				C131746D2254F9E400761163 /* AnalyticsEvent.swift in Sources */,
+				C1B4ECE9249CED3F00C0D0F8 /* BaseAnalyticsEvent.swift in Sources */,
 				C14C4D012255D4D70002AFEA /* AnalyticsTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C131745F2254F97D00761163 /* AnalyticsTests.swift in Sources */,
+				C1A37485249E5CB6001A86EF /* AnalyticsEventTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +374,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 489RNAA8R2;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -397,7 +401,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 489RNAA8R2;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

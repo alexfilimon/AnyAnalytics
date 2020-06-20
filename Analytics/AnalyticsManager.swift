@@ -6,6 +6,7 @@
 //  Copyright © 2019 Александр Филимонов. All rights reserved.
 //
 
+/// Manager for tracking events
 public class AnalyticsManager {
 
     // MARK: - Public properties
@@ -18,6 +19,8 @@ public class AnalyticsManager {
 
     // MARK: - Public methods
 
+    /// Method for tracking given event
+    /// - Parameter event: some event
     public func track(event: AnalyticsEvent) {
         for provider in providers where event.shouldTrack(in: provider) {
             provider.trackEvent(
@@ -27,10 +30,14 @@ public class AnalyticsManager {
         }
     }
 
+    /// Method for configuring manager with provider
+    /// - Parameter provider: given provider
     public func add(provider: AnalyticsProvider) {
         providers.append(provider)
     }
 
+    /// Method for configuring manager with providers
+    /// - Parameter providers: given providers
     public func add(providers: [AnalyticsProvider]) {
         self.providers.append(contentsOf: providers)
     }
