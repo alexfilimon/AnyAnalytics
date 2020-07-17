@@ -11,10 +11,10 @@
 public protocol BaseAnalyticsEvent: AnalyticsEvent {
 
     /// Shared name for all providers
-    var name: String {get}
+    var name: String { get }
 
     /// Shared parameters for all providers
-    var parameters: [String: Any] {get}
+    var parameters: [String: Any] { get }
 
 }
 
