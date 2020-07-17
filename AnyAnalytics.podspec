@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "SwiftAnalytics"
+  spec.name         = "AnyAnalytics"
   spec.version      = "0.1.2"
   spec.summary      = "Reusable library for analytics written with swift"
 
