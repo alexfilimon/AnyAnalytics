@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C12C1715262373FB00706034 /* AnalyticsUserProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12C1714262373FB00706034 /* AnalyticsUserProperty.swift */; };
+		C12C171B2623747800706034 /* BaseAnalyticsUserProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12C171A2623747800706034 /* BaseAnalyticsUserProperty.swift */; };
 		C131745A2254F97D00761163 /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C13174502254F97D00761163 /* Analytics.framework */; };
 		C13174612254F97D00761163 /* Analytics.h in Headers */ = {isa = PBXBuildFile; fileRef = C13174532254F97D00761163 /* Analytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C131746B2254F9A100761163 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131746A2254F9A100761163 /* AnalyticsManager.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C12C1714262373FB00706034 /* AnalyticsUserProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsUserProperty.swift; sourceTree = "<group>"; };
+		C12C171A2623747800706034 /* BaseAnalyticsUserProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnalyticsUserProperty.swift; sourceTree = "<group>"; };
 		C13174502254F97D00761163 /* Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13174532254F97D00761163 /* Analytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
 		C13174542254F97D00761163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +64,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C12C17182623745200706034 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				C131746C2254F9E400761163 /* AnalyticsEvent.swift */,
+				C1B4ECE8249CED3F00C0D0F8 /* BaseAnalyticsEvent.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		C12C17192623745800706034 /* User Property */ = {
+			isa = PBXGroup;
+			children = (
+				C12C1714262373FB00706034 /* AnalyticsUserProperty.swift */,
+				C12C171A2623747800706034 /* BaseAnalyticsUserProperty.swift */,
+			);
+			path = "User Property";
+			sourceTree = "<group>";
+		};
 		C13174462254F97D00761163 = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +103,13 @@
 		C13174522254F97D00761163 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				C12C17192623745800706034 /* User Property */,
+				C12C17182623745200706034 /* Event */,
 				C14C4D022255D4F30002AFEA /* Utills */,
 				C13174532254F97D00761163 /* Analytics.h */,
 				C13174542254F97D00761163 /* Info.plist */,
 				C131746A2254F9A100761163 /* AnalyticsManager.swift */,
-				C131746C2254F9E400761163 /* AnalyticsEvent.swift */,
 				C131746E2254FA2900761163 /* AnalyticsProvider.swift */,
-				C1B4ECE8249CED3F00C0D0F8 /* BaseAnalyticsEvent.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -220,8 +242,10 @@
 			files = (
 				C131746B2254F9A100761163 /* AnalyticsManager.swift in Sources */,
 				C131746F2254FA2900761163 /* AnalyticsProvider.swift in Sources */,
+				C12C171B2623747800706034 /* BaseAnalyticsUserProperty.swift in Sources */,
 				C131746D2254F9E400761163 /* AnalyticsEvent.swift in Sources */,
 				C1B4ECE9249CED3F00C0D0F8 /* BaseAnalyticsEvent.swift in Sources */,
+				C12C1715262373FB00706034 /* AnalyticsUserProperty.swift in Sources */,
 				C14C4D012255D4D70002AFEA /* AnalyticsTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,6 +30,25 @@ public class AnalyticsManager {
         }
     }
 
+    /// Method for setting user's propreties
+    /// - Parameter userProperty: given user's property
+    public func set(userProperty: AnalyticsUserProperty) {
+        for provider in providers where userProperty.shouldTrack(in: provider) {
+            provider.setUserProperty(
+                name: userProperty.getName(for: provider),
+                value: userProperty.getValue(for: provider)
+            )
+        }
+    }
+
+    /// Method for setting user's identifier
+    /// - Parameter userId: giver user's identifier
+    public func set(userId: String) {
+        for provider in providers {
+            provider.setUserId(userId)
+        }
+    }
+
     /// Method for configuring manager with provider
     /// - Parameter provider: given provider
     public func add(provider: AnalyticsProvider) {

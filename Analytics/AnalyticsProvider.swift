@@ -15,4 +15,14 @@ public protocol AnalyticsProvider {
     ///   - parameters: parameters of event
     func trackEvent(name: String, parameters: [String: Any])
 
+    /// Method for setting user preoprty's payload
+    /// - Parameters:
+    ///   - name: name of user property
+    ///   - value: value of user property
+    func setUserProperty(name: String, value: String)
+
+    /// Method for setting user's identifier
+    /// - Parameter id: user's identifier
+    func setUserId(_ id: String)
+
 }
