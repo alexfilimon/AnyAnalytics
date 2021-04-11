@@ -2,9 +2,7 @@
 
 ![](https://img.shields.io/cocoapods/v/AnyAnalytics?style=plastic)
 
-<p align="center">
-    <img src="Resources/icon.png" width="200" center>
-</p>
+<img src="Resources/icon.png" width="280" center>
 
 Library for easily integration analytics into your project.
 
