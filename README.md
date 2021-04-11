@@ -2,6 +2,8 @@
 
 ![](https://img.shields.io/cocoapods/v/AnyAnalytics?style=plastic)
 
+![Icon of library](Resources/icon.png)
+
 Library for easily integration analytics into your project.
 
 This library perfectly works with [SwiftAnalyticsGen](https://github.com/alexfilimon/swift-analytics-gen) - tool for automatically generating swift/kotlin/dart code from Google Spreadsheet file.
