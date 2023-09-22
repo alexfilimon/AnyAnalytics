@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Analytics
+@testable import AnyAnalytics
 
 class AnalyticsEventTests: XCTestCase {
 
@@ -88,6 +88,10 @@ private class MockAnalyticsProvider: AnalyticsProvider {
         numberOfTracks += 1
     }
 
+    func setUserProperty(name: String, value: String) {}
+
+    func setUserId(_ id: String) {}
+
 }
 
 private struct AnalyticsEventThatTracksNonAllProviders: AnalyticsEvent {
@@ -124,5 +128,9 @@ private class NonTrackingAnalyticsProvider: AnalyticsProvider {
     func trackEvent(name: String, parameters: [String : Any]) {
         numberOfTracks += 1
     }
+
+    func setUserProperty(name: String, value: String) {}
+
+    func setUserId(_ id: String) {}
 
 }
