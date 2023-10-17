@@ -21,6 +21,10 @@ public class AnalyticsTimer {
 
     private var date = NSDate()
 
+    // MARK: - Initialization
+
+    public init() {}
+
     // MARK: - Public methods
 
     /// Method for clearing time
@@ -30,8 +34,17 @@ public class AnalyticsTimer {
 
     /// Method for getting current time
     public func getTimeIntervalSinceLastStart() -> TimeInterval {
-        let multiplier = pow(10, Double(Constants.roundDidgits))
-        return Darwin.round(abs(date.timeIntervalSinceNow) * multiplier) / multiplier
+        date.timeIntervalSinceNow.analytics_rounded(roundDigits: Constants.roundDidgits)
+    }
+
+}
+
+public extension Double {
+
+    func analytics_rounded(roundDigits: Int) -> Double {
+        let multiplier = pow(10, Double(roundDigits))
+        let rounded = Double(Int(Double(self * multiplier).rounded()))
+        return rounded / multiplier
     }
 
 }
