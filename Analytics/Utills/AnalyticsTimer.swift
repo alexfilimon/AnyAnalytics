@@ -43,7 +43,7 @@ public extension Double {
 
     func analytics_rounded(roundDigits: Int) -> Double {
         let multiplier = pow(10, Double(roundDigits))
-        let rounded = Double(Int(Double(self * multiplier).rounded()))
+        let rounded = Double(Int(Double(abs(self) * multiplier).rounded()))
         return rounded / multiplier
     }
 
